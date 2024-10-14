@@ -13,14 +13,14 @@ nauja_knyga.append(zanras)
 metai = input("Įveskite knygos išleidimo metus")
 nauja_knyga.append(metai)
 
-import knygos
-
-knygos_nr = 1
+visos_knygos = {}
+print(visos_knygos)
+knygos_nr = 0
 knygos_nr = 1 + knygos_nr
 
-def prideti_knyga():
-   visos_knygos[knygos_nr] = [nauja_knyga]   
+visos_knygos[knygos_nr] = [nauja_knyga]   
 
 print(f"Jūsų įvesta knyga {nauja_knyga} pridėta i biblioteka")
+print(f"Visu knygų {visos_knygos} sarašas")
 
 
