@@ -1,26 +1,38 @@
-
+knygos_nr = 0
+   
+#Sarasas naujai knygai
+    
 nauja_knyga = []
 
-autorius = input("Įveskite knygos autorių")
-nauja_knyga.append(autorius)
+def sukurti_knyga():
+    #kuriamas unikalus knygos numeris bibliotekoje
+    
+    knygos_nr = knygos_nr + 1  
 
-pavadinimas = input("Įveskite knygos pavadinimą")
-nauja_knyga.append(pavadinimas)
+    
+    #surenkama knyga
+    autorius = input("Įveskite knygos autorių: ")
+    nauja_knyga.append(autorius)
 
-zanras = input("Įveskite knygos žanrą")
-nauja_knyga.append(zanras)
+    pavadinimas = input("Įveskite knygos pavadinimą: ")
+    nauja_knyga.append(pavadinimas)
 
-metai = input("Įveskite knygos išleidimo metus")
-nauja_knyga.append(metai)
+    zanras = input("Įveskite knygos žanrą: ")
+    nauja_knyga.append(zanras)
 
+    metai = input("Įveskite knygos išleidimo metus: ")
+    nauja_knyga.append(metai)
+
+#zodynas knygu bibliotekai
 visos_knygos = {}
-print(visos_knygos)
-knygos_nr = 0
-knygos_nr = 1 + knygos_nr
 
+
+
+#vartotojo sukurta knyga pridedama i zodyna (biblioteka)
 visos_knygos[knygos_nr] = [nauja_knyga]   
 
+#spausdinama sukurta knyga ir visos knygos bibliotekoje
 print(f"Jūsų įvesta knyga {nauja_knyga} pridėta i biblioteka")
-print(f"Visu knygų {visos_knygos} sarašas")
+print(f"Visos knygos {visos_knygos}")
 
 
