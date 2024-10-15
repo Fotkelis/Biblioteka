@@ -5,13 +5,14 @@ visos_knygos = {}
    
 #Sarasas naujai knygai
     
-nauja_knyga = []
+
 while True:
     
 #kuriamas unikalus knygos numeris bibliotekoje
     
     knygos_nr = knygos_nr + 1  
 
+    nauja_knyga = []
     
     #surenkama knyga
     autorius = input("Įveskite knygos autorių: ")

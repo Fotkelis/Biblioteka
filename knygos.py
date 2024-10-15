@@ -1,5 +1,2 @@
-visos_knygos = {}
-
-def knygu_zodynas():
-    visos_knygos
-    print(visos_knygos)
+from nauja_knyga import visos_knygos
+print(f"Visos knygos {visos_knygos}")

@@ -6,7 +6,7 @@ class Knyga:
         self.is_metai = is_metai 
 
     def busena (self, ar_tinka):
-        if is_metai >= 1991:
+        if  is_metai >= 1991:
             print ("tinka")
         else:
             print("netinka, išmesti")
