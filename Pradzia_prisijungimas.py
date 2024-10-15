@@ -23,7 +23,7 @@ if user_in == username and passw_in == passw:
     print("..")
     print(".")
     
-    import nauja_knyga
+    import antrra_pradzia_veiksmu_pasirinkimas
    
 
     

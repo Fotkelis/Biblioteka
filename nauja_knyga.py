@@ -1,5 +1,7 @@
 import json
 knygos_nr = 0
+#zodynas knygu bibliotekai
+visos_knygos = {}
    
 #Sarasas naujai knygai
     
@@ -23,8 +25,7 @@ while True:
     metai = input("Įveskite knygos išleidimo metus: ")
     nauja_knyga.append(metai)
 
-#zodynas knygu bibliotekai
-    visos_knygos = {}
+
 
 #vartotojo sukurta knyga pridedama i zodyna (biblioteka)
     visos_knygos[knygos_nr] = nauja_knyga

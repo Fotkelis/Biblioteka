@@ -1,5 +1,5 @@
 visos_knygos = {}
 
 def knygu_zodynas():
-    global visos_knygos
+    visos_knygos
     print(visos_knygos)
