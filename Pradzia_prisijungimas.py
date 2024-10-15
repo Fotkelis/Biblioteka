@@ -7,6 +7,13 @@ user_in = input("Vartotojo vardas: ")
 passw_in = input("Slaptažodis: ")
 
 #tikrinam prisijungimus, jei tinka imortuojam knygos pridejima
+import winsound
+
+frequency = 2000
+duration = 15
+winsound.Beep(frequency, duration,)
+winsound.Beep(frequency, duration,)
+winsound.Beep(frequency, duration,)
 
 if user_in == username and passw == passw:
     print("\033[1;32;40m\n")
@@ -23,6 +30,9 @@ if user_in == username and passw == passw:
 
 
 elif user_in == username and passw != passw:
+    frequency = 2000
+    duration = 1500
+    winsound.Beep(frequency, duration) 
     print("\033[1;31;47m\n")
     print(".")
     print("..")
@@ -31,7 +41,13 @@ elif user_in == username and passw != passw:
     print("...")
     print("..")
     print(".")
+    frequency = 2000
+    duration = 1500
+    winsound.Beep(frequency, duration) 
 elif user_in != username and passw == passw:
+    frequency = 2000
+    duration = 1500
+    winsound.Beep(frequency, duration) 
     print("\033[1;31;47m\n")
     print(".")
     print("..")
@@ -40,9 +56,14 @@ elif user_in != username and passw == passw:
     print("...")
     print("..")
     print(".")
+    frequency = 2000
+    duration = 1500
+    winsound.Beep(frequency, duration) 
 elif user_in != username and passw != passw:
+    frequency = 2000
+    duration = 1500
+    winsound.Beep(frequency, duration) 
     print("\033[1;31;47m\n")
-    
     print(".")
     print("..")
     print("...")
@@ -50,3 +71,6 @@ elif user_in != username and passw != passw:
     print("...")
     print("..")
     print(".")
+    frequency = 2000
+    duration = 1500
+    winsound.Beep(frequency, duration) 
