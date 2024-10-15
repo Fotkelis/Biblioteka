@@ -1,5 +1,3 @@
-
-
 username = "Paulius"
 passw = "1234567"
 
@@ -15,7 +13,7 @@ winsound.Beep(frequency, duration,)
 winsound.Beep(frequency, duration,)
 winsound.Beep(frequency, duration,)
 
-if user_in == username and passw == passw:
+if user_in == username and passw_in == passw:
     print("\033[1;32;40m\n")
     print(".")
     print("..")
@@ -24,12 +22,12 @@ if user_in == username and passw == passw:
     print("...")
     print("..")
     print(".")
-
+    
     import nauja_knyga
+   
 
-
-
-elif user_in == username and passw != passw:
+    
+elif user_in == username and passw_in != passw:
     frequency = 2000
     duration = 1500
     winsound.Beep(frequency, duration) 
@@ -44,7 +42,7 @@ elif user_in == username and passw != passw:
     frequency = 2000
     duration = 1500
     winsound.Beep(frequency, duration) 
-elif user_in != username and passw == passw:
+elif user_in != username and passw_in == passw:
     frequency = 2000
     duration = 1500
     winsound.Beep(frequency, duration) 
@@ -59,7 +57,7 @@ elif user_in != username and passw == passw:
     frequency = 2000
     duration = 1500
     winsound.Beep(frequency, duration) 
-elif user_in != username and passw != passw:
+elif user_in != username and passw_in != passw:
     frequency = 2000
     duration = 1500
     winsound.Beep(frequency, duration) 
